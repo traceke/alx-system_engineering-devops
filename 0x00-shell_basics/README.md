@@ -40,10 +40,16 @@ This folder shall list each script in this directory and their function
 
 19. School magic file --> a script that creates a magic file school.mgc that can be used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0.
 
-	--> to complete (19) create a regular school file that contains the command		0 string SCHOOL school data
-	     !:mime School data
-	--> 0 stands for the offset, string indicates what type of variable the file should contain, SCHOOL is the string that must be contained in the any files detected and School data is the message that should be printed when a school file is detected.
-	--> after creating this file, run a magic (compilation) command to creeate the magic file
-	--> file -C -m school.mgc -- to compile it and;
-	--> file -m school.mgc -- to use it
+--> to complete (19) create a regular school file that contains the command
+
+	0 string SCHOOL school data
+
+	!:mime School data
+	
+--> 0 stands for the offset, string indicates what type of variable the file should contain, SCHOOL is the string that must be contained in the any files detected and School data is the message that should be printed when a school file is detected.
+
+--> after creating this file, run a magic (compilation) command to creeate the magic file
+
+	file -C -m school.mgc -- to compile it and;
+	file -m school.mgc -- to use it
 
